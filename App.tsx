@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, Text, TextInput, View, Button } from 'react-native';
+import { styles } from './styles/appStyles';
+import { AddTodo } from './components/add-todo/addTodo';
+import { TitleTodo } from './components/title-todo/TitleTodo';
+
+
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.box}>
+    <TitleTodo text={"TODO-APP"}></TitleTodo>
+    <AddTodo></AddTodo>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
