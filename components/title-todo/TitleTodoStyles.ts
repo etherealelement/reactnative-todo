@@ -4,7 +4,7 @@ export const titleStyles = StyleSheet.create({
     title: {
         fontWeight: "700",
         color: "purple",
-        paddingBottom: 20,
-        paddingLeft: 10,
+        textAlign: "center",
+        marginBottom: 20,
     }
 })

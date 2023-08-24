@@ -16,9 +16,14 @@ export const styles = StyleSheet.create({
       flex: 1,
       width: 400,
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
+      
     },
-  
+    
+    viewContainer: {
+      flex: 1,
+      marginTop: 100,
+    }
 
 
   });
